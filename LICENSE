@@ -9,6 +9,14 @@ kijai/ComfyUI-KJNodes
 https://github.com/kijai/ComfyUI-KJNodes
 
 Here are the changes by ChildProgrammer
+As a countermeasure for the following error
+-
+[ERROR] An error occurred while retrieving information for the 'LTXVAddGuideMulti' node.
+〜
+AttributeError: module 'comfy_api.latest._io_public' has no attribute 'DynamicCombo'
+-
+occurring when launching ComfyUI, I have modified it so that it no longer causes an error even if the “DynamicCombo attribute” is absent.
+
 requirements.txt：
 Fine-tuned dependencies.
 
